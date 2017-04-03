@@ -23,8 +23,8 @@ defmodule JerboaExtend.Attribute.Software do
     def type_code(_attr), do: @code
 
     @spec encode(Software.t, Meta.t) :: {Meta.t, binary}
-    def encode(%Software{value: software}, meta) do 
-      if String.valid?(software) && String.length(software) < Software.max_length do
+    def encode(%Software{value: software}, meta) do
+      if String.valid?(software) && (String.length(software) < Software.max_length) do
         {meta, software}
       end
     end
@@ -36,8 +36,8 @@ defmodule JerboaExtend.Attribute.Software do
     @spec decode(Software.t, value :: binary, meta :: Meta.t)
     :: {:ok, Meta.t, Sofrware.t} | {:error, term}
     def decode(%Software{} = s, value, meta) do
-      if String.valid?(value) && String.length(value) < Software.max_length do
-        {meta, %{s | value: value}}
+      if String.valid?(value) && (String.length(value) < Software.max_length) do
+        {:ok, meta, %{s | value: value}}
       end
     end
   end

@@ -1,19 +1,9 @@
 # JerboaExtend
 
-**TODO: Add description**
+This repository illustrates how to add new [attributes] to the [jerboa]
+STUN/TURN encoder. It requires the jerboa extension which are implemented on a
+[branch].
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `jerboa_extend` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [{:jerboa_extend, "~> 0.1.0"}]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/jerboa_extend](https://hexdocs.pm/jerboa_extend).
-
+[attributes]: https://tools.ietf.org/html/rfc5389#section-15
+[jerboa]: https://github.com/esl/jerboa/
+[branch]: https://github.com/esl/jerboa/tree/attributes-extensibility

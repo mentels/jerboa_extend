@@ -16,6 +16,7 @@ defmodule JerboaExtend.Mixfile do
 
   defp deps do
     [{:jerboa, git: "git@github.com:esl/jerboa.git"},
-     {:ex_doc, "~> 0.15"}]
+     {:ex_doc, "~> 0.15"},
+     {:quixir, "~> 0.9"}]
   end
 end
